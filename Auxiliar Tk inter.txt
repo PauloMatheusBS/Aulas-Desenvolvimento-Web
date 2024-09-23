@@ -1,0 +1,60 @@
+Opções do Método grid
+row: Define o número da linha onde o widget será colocado (inteiro).
+
+column: Define o número da coluna onde o widget será colocado (inteiro).
+
+rowspan: Define o número de linhas que o widget deve ocupar (inteiro).
+
+columnspan: Define o número de colunas que o widget deve ocupar (inteiro).
+
+sticky: Define como o widget se expande para preencher o espaço da célula. Pode ser uma combinação de:
+
+n (norte)
+e (leste)
+s (sul)
+w (oeste)
+ne, nw, se, sw (para alinhar nos cantos)
+ew, ns, nsew (para expandir em uma direção ou em ambas)
+padx: Define o preenchimento horizontal (espaço) em pixels ao redor do widget (inteiro).
+
+pady: Define o preenchimento vertical (espaço) em pixels ao redor do widget (inteiro).
+
+ipadx: Define o preenchimento interno horizontal do widget (inteiro).
+
+ipady: Define o preenchimento interno vertical do widget (inteiro).
+
+padx: Define o preenchimento horizontal ao redor do widget (inteiro).
+
+pady: Define o preenchimento vertical ao redor do widget (inteiro).
+
+subsample(n, m): Reduz a imagem em n vezes na largura e m vezes na altura.
+zoom(n, m): Aumenta a imagem em n vezes na largura e m vezes na altura.
+
+
+pip install pyqt6
+pip install pyqt6-tools
+pyqt6-tools designer
+pyside6-designer
+pip install -u PySide6
+
+show create database ---;
+show table;
+show create table ---;
+show table status;
+
+10.28.2.63 senha suporte
+
+
+('Cliente', 'paulo', 'paulo'),
+('Gerente Geral', 'admpaulo', 'paulo'),
+
+
+
+****************************************************
+
+ SELECT RefCons.constraint_schema, RefCons.table_name, RefCons.referenced_table_name, RefCons.constraint_name, KeyCol.column_name
+FROM information_schema.referential_constraints RefCons
+JOIN information_schema.key_column_usage KeyCol ON RefCons.constraint_schema = KeyCol.table_schema
+     AND RefCons.table_name = KeyCol.table_name
+     AND RefCons.constraint_name = KeyCol.constraint_name
+WHERE RefCons.constraint_schema = 'cadastro';
